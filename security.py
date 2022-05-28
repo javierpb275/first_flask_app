@@ -4,9 +4,9 @@ users = [
     User(1, 'bob', '123')
 ]
 
-username_mapping = {user.username: user for user in users}
+username_mapping = {u.username: u for u in users}
 
-userid_mapping = {user.id: user for user in users}
+userid_mapping = {u.id: u for u in users}
 
 
 def authenticate(username, password):
